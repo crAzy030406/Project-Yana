@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECTYAANA — Helping the Next Generation Get Seen</title>
+  <meta name="description" content="ProjectYaana is a clipping agency built specifically to help small and aspiring gaming creators turn long-form content into short-form distribution.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Minimal Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <a href="#top" class="brand-wordmark" aria-label="ProjectYaana Home">
+        PROJECTYAANA<span class="brand-dot"></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#problem" class="nav-link">The Bottleneck</a>
+        <a href="#what-we-do" class="nav-link">What We Do</a>
+        <a href="#system" class="nav-link">System</a>
+        <a href="#principles" class="nav-link">Principles</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-cta">
+        <button type="button" class="btn-primary" onclick="openBookingModal()">
+          Book a Call <span aria-hidden="true">&rarr;</span>
+        </button>
+      </div>
+
+      <button type="button" class="mobile-menu-btn" aria-label="Toggle Navigation Menu" onclick="toggleMobileNav()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-nav-links">
+      <a href="#problem" class="mobile-nav-link" onclick="toggleMobileNav()">The Bottleneck</a>
+      <a href="#what-we-do" class="mobile-nav-link" onclick="toggleMobileNav()">What We Do</a>
+      <a href="#system" class="mobile-nav-link" onclick="toggleMobileNav()">How It Works</a>
+      <a href="#principles" class="mobile-nav-link" onclick="toggleMobileNav()">Principles</a>
+      <a href="#faq" class="mobile-nav-link" onclick="toggleMobileNav()">FAQ</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <button type="button" class="btn-primary" style="width: 100%;" onclick="toggleMobileNav(); openBookingModal();">
+        Book Strategy Call &rarr;
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- 01. HERO SECTION -->
+    <section class="site-section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="section-label">Creator Distribution & Clipping</div>
+            <h1 class="hero-statement">
+              HELPING THE<br>
+              NEXT GENERATION<br>
+              <span class="accent">GET SEEN.</span>
+            </h1>
+            <p class="hero-desc">
+              We turn long-form creator content into short-form clips built for distribution. You make the content. We build the clipping system to help it travel.
+            </p>
+            <div class="hero-action-row">
+              <button type="button" class="btn-primary" onclick="openBookingModal()">
+                Start a Campaign <span aria-hidden="true">&rarr;</span>
+              </button>
+              <a href="#what-we-do" class="btn-outline">
+                Explore The System
+              </a>
+              <div class="hero-meta-badge">
+                <span class="dot"></span>
+                <span>GAMING-NATIVE INITIATIVE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media-wrapper">
+            <img src="hero_streamer.jpg" alt="Young gaming creator at streaming setup focused on monitor reflection" loading="eager">
+            <div class="hero-media-caption">
+              <span>Raw Long-Form Stream</span>
+              <span>Distribution Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. PROOF STRIP (MARQUEE) -->
+    <section class="proof-strip" aria-label="Creators and platform distribution channels">
+      <div class="container proof-inner">
+        <div class="proof-label">Distribution Channels</div>
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <div class="marquee-item">YOUTUBE SHORTS <span class="accent-tag">High Retention</span></div>
+            <div class="marquee-item">INSTAGRAM REELS <span class="accent-tag">Viral Reach</span></div>
+            <div class="marquee-item">TIKTOK <span class="accent-tag">Algorithmic Discovery</span></div>
+            <div class="marquee-item">TWITCH & KICK <span class="accent-tag">Livestream VODs</span></div>
+            <div class="marquee-item">X (TWITTER) <span class="accent-tag">Clutch Clips</span></div>
+            <!-- Duplicated for seamless infinite loop -->
+            <div class="marquee-item">YOUTUBE SHORTS <span class="accent-tag">High Retention</span></div>
+            <div class="marquee-item">INSTAGRAM REELS <span class="accent-tag">Viral Reach</span></div>
+            <div class="marquee-item">TIKTOK <span class="accent-tag">Algorithmic Discovery</span></div>
+            <div class="marquee-item">TWITCH & KICK <span class="accent-tag">Livestream VODs</span></div>
+            <div class="marquee-item">X (TWITTER) <span class="accent-tag">Clutch Clips</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. VERIFIED RESULTS & NUMERICAL PROOF -->
+    <section class="stats-section" id="proof">
+      <div class="container">
+        <div class="section-label">Verified Track Record</div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num">100M+</div>
+            <div class="stat-meta">Organic Views</div>
+            <div class="stat-desc">Generated across short-form platforms in the last 6 months through structured clipping campaigns.</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">21+</div>
+            <div class="stat-meta">Creators Supported</div>
+            <div class="stat-desc">Collaborating with small and emerging creators to multiply their reach without adding editing burdens.</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">6-7</div>
+            <div class="stat-meta">Years Experience</div>
+            <div class="stat-desc">Founding team background working directly inside gaming, production, and high-volume distribution.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. THE PROBLEM & WHAT WE DO (EDITORIAL STATEMENT) -->
+    <section class="site-section statement-section" id="problem">
+      <div class="container">
+        <div class="editorial-layout">
+          <div class="editorial-aside">
+            <div class="section-label">The Bottleneck</div>
+          </div>
+          <div class="editorial-main">
+            <h2 class="editorial-big-text">
+              You don't have a content problem.<br>
+              You have a <em>distribution bottleneck.</em>
+            </h2>
+            <div class="editorial-columns">
+              <div class="editorial-col">
+                <h3>The Discovery Barrier</h3>
+                <p>
+                  Established creators already dominate algorithmic recommendations. A new creator can produce incredible 2-hour gameplay streams, but new viewers rarely search for an unknown creator's 90-minute upload.
+                </p>
+              </div>
+              <div class="editorial-col">
+                <h3>The Short-Form Gateway</h3>
+                <p>
+                  Short-form content creates a zero-friction discovery layer. A 30-second clutch gameplay moment or relatable reaction introduces you to thousands of viewers who would never have clicked your long-form video first.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. FULL BLEED EDITORIAL VISUAL -->
+    <div class="full-bleed-visual">
+      <img src="clutch_moment.jpg" alt="Competitive gaming clutch moment displayed on an ultra-wide monitor" loading="lazy">
+      <div class="full-bleed-overlay">
+        <div class="full-bleed-content">
+          <div class="section-label" style="margin-bottom: 12px;">Moment Extraction</div>
+          <h3>One stream holds dozens of breakthrough moments.</h3>
+          <p>We identify the exact clutch plays, unexpected humor, and strong opinions that resonate on social feeds.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06. WHAT PROJECTYAANA DOES -->
+    <section class="site-section statement-section" id="what-we-do">
+      <div class="container">
+        <div class="editorial-layout">
+          <div class="editorial-aside">
+            <div class="section-label">What We Do</div>
+          </div>
+          <div class="editorial-main">
+            <h2 class="editorial-big-text">
+              We turn long-form creator content into <em>short-form distribution</em> built for discovery.
+            </h2>
+            <div class="editorial-columns">
+              <div class="editorial-col">
+                <h3>End-to-End Clipping Infrastructure</h3>
+                <p>
+                  ProjectYaana is not simply a video editing service. We build and manage the entire workflow: identifying highlights, editing for hook retention, coordinating clippers, and distributing across channels.
+                </p>
+              </div>
+              <div class="editorial-col">
+                <h3>Accessible to Emerging Creators</h3>
+                <p>
+                  Big creator agencies charge exorbitant fees reserved for massive influencers. ProjectYaana was created specifically to give smaller and aspiring creators the distribution systems they need to compete.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. HOW IT WORKS (3-STEP SYSTEM) -->
+    <section class="site-section system-section" id="system">
+      <div class="container">
+        <div class="section-label">The Workflow</div>
+        <div class="system-grid">
+          <div class="system-steps-list" role="tablist" aria-label="System Workflow Steps">
+            
+            <div class="system-step-item active" tabindex="0" role="tab" aria-selected="true" onclick="activateStep(0)">
+              <div class="system-step-header">
+                <span class="system-step-num">01</span>
+                <h3 class="system-step-title">Content & System Setup</h3>
+              </div>
+              <p class="system-step-desc">
+                You provide your existing long-form streams, recordings, or podcasts. We set up the internal campaign architecture, define clipping parameters, and establish distribution schedules.
+              </p>
+            </div>
+
+            <div class="system-step-item" tabindex="0" role="tab" aria-selected="false" onclick="activateStep(1)">
+              <div class="system-step-header">
+                <span class="system-step-num">02</span>
+                <h3 class="system-step-title">Moment Extraction & Production</h3>
+              </div>
+              <p class="system-step-desc">
+                Our team identifies moments with high emotional, humorous, or gameplay value. We edit vertical clips optimized for viewer retention, crisp typography, and narrative context that stands on its own.
+              </p>
+            </div>
+
+            <div class="system-step-item" tabindex="0" role="tab" aria-selected="false" onclick="activateStep(2)">
+              <div class="system-step-header">
+                <span class="system-step-num">03</span>
+                <h3 class="system-step-title">Multi-Platform Distribution</h3>
+              </div>
+              <p class="system-step-desc">
+                Clips are scheduled across short-form feeds (YouTube Shorts, Reels, TikTok). Each clip serves as a gateway bringing new viewers back to your primary channel and growing community.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="system-visual-wrapper">
+            <div class="system-visual-container">
+              <img id="systemVisualImg" src="editing_workflow.jpg" alt="Video editing suite showing multitrack timeline of clip production" class="system-visual-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. USE CASE HASHTAG INSTALLATION -->
+    <section class="site-section hashtag-section" aria-label="Creator categories supported">
+      <div class="container">
+        <div class="section-label muted">Engineered For</div>
+        <div class="hashtag-wall">
+          <div class="hashtag-row">
+            <span class="hashtag-text">#GAMERS</span>
+            <span class="hashtag-text">#STREAMERS</span>
+            <span class="hashtag-text">#ESPORTS</span>
+          </div>
+          <div class="hashtag-row offset">
+            <span class="hashtag-text">#YOUTUBERS</span>
+            <span class="hashtag-text">#CREATORS</span>
+          </div>
+          <div class="hashtag-row">
+            <span class="hashtag-text">#PODCASTS</span>
+            <span class="hashtag-text">#COMMENTARY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. PERFORMANCE & PRINCIPLES -->
+    <section class="site-section principles-section" id="principles">
+      <div class="container">
+        <div class="section-label">Core Principles</div>
+        <div class="principles-list">
+          
+          <div class="principle-row">
+            <span class="principle-num">01</span>
+            <h3 class="principle-title">CREATOR-FIRST</h3>
+            <p class="principle-body">
+              Every campaign is built around your authentic voice and gameplay style. We do not force artificial gimmicks; we elevate the moments that genuinely reflect your personality.
+            </p>
+          </div>
+
+          <div class="principle-row">
+            <span class="principle-num">02</span>
+            <h3 class="principle-title">DISTRIBUTION-FIRST</h3>
+            <p class="principle-body">
+              Editing is meaningless if the content stays hidden. Our primary goal is not just rendering MP4 files—it is building an active distribution funnel that reaches untouched audiences.
+            </p>
+          </div>
+
+          <div class="principle-row">
+            <span class="principle-num">03</span>
+            <h3 class="principle-title">GROW TOGETHER</h3>
+            <p class="principle-body">
+              ProjectYaana is an initiative designed to grow alongside the creators we support. We are not a distant corporate vendor; we are a dedicated creative team invested in your long-term success.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FOUNDER NARRATIVE SECTION -->
+    <section class="site-section founder-section" id="about">
+      <div class="container">
+        <div class="founder-grid">
+          <div>
+            <div class="section-label">The Team & Story</div>
+            <h2 class="founder-heading">
+              Built by gamers who understand the grind.
+            </h2>
+            <p style="margin-bottom: 20px;">
+              Founded by Shivam, Summer, and Crazy, ProjectYaana was born from over 6–7 years of collective immersion inside gaming, content creation, editing, and creative operations.
+            </p>
+            <p>
+              We know firsthand how exhausting it is to spend dozens of hours livestreaming or editing without seeing audience growth. We combined our background in editing, team management, and distribution to build the system we wished existed when we started.
+            </p>
+            <div class="founder-tags">
+              <span class="founder-tag">Team Coordination</span>
+              <span class="founder-tag">Gaming Culture</span>
+              <span class="founder-tag">Quality Control</span>
+              <span class="founder-tag">Scalable Workflow</span>
+            </div>
+          </div>
+          <div>
+            <div class="section-label muted">Our Commitment</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 16px; color: #FFFFFF;">
+              "The next big creator does not need to start with a massive audience. They need an opportunity to be discovered."
+            </h3>
+            <p style="margin-bottom: 24px;">
+              The Indian clipping ecosystem is in its early stages. Many creators don't yet understand how short-form clipping works or how to build a team around their channel. Part of our mission is education—helping emerging talent understand and leverage modern distribution mechanics.
+            </p>
+            <button type="button" class="btn-outline" onclick="openBookingModal()">
+              Talk With Our Founders &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FAQ ACCORDION -->
+    <section class="site-section faq-section" id="faq">
+      <div class="container">
+        <div class="faq-header-layout">
+          <div>
+            <div class="section-label">Questions</div>
+            <h2 style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1.1;">
+              Frequently<br>Asked Questions
+            </h2>
+          </div>
+          
+          <div class="faq-list">
+            
+            <div class="faq-item open">
+              <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
+                <span>What exactly is clipping?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  Clipping is the process of extracting valuable, entertaining, or clutch moments from long-form streams or videos and reformatting them into stand-alone short-form content designed for social distribution algorithms.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
+                <span>How is this different from hiring a freelance video editor?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  A freelance editor waits for you to send specific timestamps and edits individual files. ProjectYaana provides a full campaign system: we review your raw content, identify hooks, manage clippers, ensure quality control, and coordinate multi-platform distribution.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
+                <span>Do I need an existing audience to work with ProjectYaana?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  No. ProjectYaana was founded specifically for small and emerging creators. If you are already producing regular gaming content and are serious about growing, you have what you need to start.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
+                <span>What platforms do you distribute clips to?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  We focus primarily on the highest-leverage discovery algorithms: YouTube Shorts, Instagram Reels, TikTok, and X (Twitter), tailored to where your gaming niche congregates.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
+                <span>Do you guarantee that my clips will go viral?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  No responsible agency can guarantee algorithmic virality. What we guarantee is a consistent, high-retention clipping system that increases your opportunities for discovery ten-fold from the content you already create.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FINAL CLOSING CTA -->
+    <section class="final-cta-section" id="contact">
+      <div class="container">
+        <div class="section-label">Get Started</div>
+        <h2 class="cta-huge-title">
+          HELPING THE<br>
+          NEXT GENERATION<br>
+          <span class="accent">GET SEEN.</span>
+        </h2>
+        <div class="cta-bottom-row">
+          <p class="cta-statement">
+            You make the content. We build the engine that helps it travel. Connect with our team to map out your clipping campaign.
+          </p>
+          <button type="button" class="btn-primary" style="padding: 16px 28px; font-size: 1rem;" onclick="openBookingModal()">
+            Book a Strategy Call <span aria-hidden="true">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 13. MINIMAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>PROJECTYAANA</h2>
+          <p style="max-width: 380px;">
+            A creator growth initiative helping emerging creators turn long-form gaming content into scalable short-form distribution.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#what-we-do">What We Do</a></li>
+            <li><a href="#system">How It Works</a></li>
+            <li><a href="#proof">Verified Proof</a></li>
+            <li><a href="#principles">Core Principles</a></li>
+            <li><a href="#about">About Founders</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Info</h4>
+          <ul class="footer-nav-list">
+            <li><a href="mailto:hello@projectyaana.com">hello@projectyaana.com</a></li>
+            <li><a href="#" onclick="openBookingModal(); return false;">Book Consultation</a></li>
+            <li><a href="#top">Back to top &uarr;</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 PROJECTYAANA. ALL RIGHTS RESERVED.</div>
+        <div>CONTENT &bull; CLIPPING &bull; DISTRIBUTION</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking / Strategy Call Modal -->
+  <div class="modal-backdrop" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" aria-label="Close Modal" onclick="closeBookingModal()">&times;</button>
+      <h3 class="modal-title" id="modalTitle">Book Strategy Call</h3>
+      <p class="modal-subtitle">Tell us about your channel. We'll review your content and discuss a clipping roadmap.</p>
+      
+      <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="creatorName">Your Name</label>
+          <input type="text" id="creatorName" class="form-input" required placeholder="e.g. Alex Sharma">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="creatorEmail">Email Address</label>
+          <input type="email" id="creatorEmail" class="form-input" required placeholder="name@domain.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="channelLink">YouTube / Twitch / Kick Link</label>
+          <input type="url" id="channelLink" class="form-input" required placeholder="https://youtube.com/@channel">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="primaryGoal">Primary Goal</label>
+          <select id="primaryGoal" class="form-select">
+            <option value="discovery">Reach New Audiences through Shorts/Reels</option>
+            <option value="system">Build an Automated Clipping Workflow</option>
+            <option value="community">Grow Gaming Community & Followers</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; padding: 14px; margin-top: 8px;">
+          Submit Channel Review Request &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Interactive Logic (Emil's principles + Accessible details) -->
+  <script>
+    // System steps visual sync
+    const systemImages = [
+      'editing_workflow.jpg',
+      'clutch_moment.jpg',
+      'hero_streamer.jpg'
+    ];
+
+    function activateStep(index) {
+      const items = document.querySelectorAll('.system-step-item');
+      items.forEach((item, i) => {
+        if (i === index) {
+          item.classList.add('active');
+          item.setAttribute('aria-selected', 'true');
+        } else {
+          item.classList.remove('active');
+          item.setAttribute('aria-selected', 'false');
+        }
+      });
+
+      const visualImg = document.getElementById('systemVisualImg');
+      if (visualImg && systemImages[index]) {
+        visualImg.style.opacity = '0.4';
+        setTimeout(() => {
+          visualImg.src = systemImages[index];
+          visualImg.style.opacity = '1';
+        }, 150);
+      }
+    }
+
+    // FAQ Accordion (Single item open at once)
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('open');
+      });
+
+      // Toggle clicked
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    }
+
+    // Mobile Navigation Drawer Toggle
+    function toggleMobileNav() {
+      const drawer = document.getElementById('mobileDrawer');
+      const isOpen = drawer.classList.contains('open');
+      if (isOpen) {
+        drawer.classList.remove('open');
+        drawer.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      } else {
+        drawer.classList.add('open');
+        drawer.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // Booking Modal
+    function openBookingModal() {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        const input = document.getElementById('creatorName');
+        if (input) input.focus();
+      }, 100);
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal on Escape key or backdrop click
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeBookingModal();
+        const drawer = document.getElementById('mobileDrawer');
+        if (drawer.classList.contains('open')) toggleMobileNav();
+      }
+    });
+
+    document.getElementById('bookingModal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) {
+        closeBookingModal();
+      }
+    });
+
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('bookingForm');
+      form.innerHTML = `
+        <div style="padding: 24px 0; text-align: center;">
+          <h4 style="font-size: 1.3rem; margin-bottom: 8px; color: #FFFFFF;">Channel Received</h4>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Thank you. Our team will review your channel and contact you within 24 hours.</p>
+          <button type="button" class="btn-primary" onclick="closeBookingModal()">Done</button>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
